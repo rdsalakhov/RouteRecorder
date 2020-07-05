@@ -14,6 +14,8 @@
 		47A7E67A24B21B9B001454C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47A7E67924B21B9B001454C8 /* Assets.xcassets */; };
 		47A7E67D24B21B9B001454C8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47A7E67C24B21B9B001454C8 /* Preview Assets.xcassets */; };
 		47A7E68024B21B9B001454C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47A7E67E24B21B9B001454C8 /* LaunchScreen.storyboard */; };
+		47A7E68824B21C36001454C8 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A7E68724B21C36001454C8 /* LocationManager.swift */; };
+		47A7E68A24B21C5A001454C8 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A7E68924B21C5A001454C8 /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		47A7E67C24B21B9B001454C8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		47A7E67F24B21B9B001454C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		47A7E68124B21B9B001454C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47A7E68724B21C36001454C8 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		47A7E68924B21C5A001454C8 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,8 @@
 				47A7E68124B21B9B001454C8 /* Info.plist */,
 				47A7E67424B21B99001454C8 /* RouteRecorder.xcdatamodeld */,
 				47A7E67B24B21B9B001454C8 /* Preview Content */,
+				47A7E68724B21C36001454C8 /* LocationManager.swift */,
+				47A7E68924B21C5A001454C8 /* MapView.swift */,
 			);
 			path = RouteRecorder;
 			sourceTree = "<group>";
@@ -150,7 +156,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				47A7E67124B21B99001454C8 /* AppDelegate.swift in Sources */,
+				47A7E68A24B21C5A001454C8 /* MapView.swift in Sources */,
 				47A7E67324B21B99001454C8 /* SceneDelegate.swift in Sources */,
+				47A7E68824B21C36001454C8 /* LocationManager.swift in Sources */,
 				47A7E67824B21B99001454C8 /* ContentView.swift in Sources */,
 				47A7E67624B21B99001454C8 /* RouteRecorder.xcdatamodeld in Sources */,
 			);
