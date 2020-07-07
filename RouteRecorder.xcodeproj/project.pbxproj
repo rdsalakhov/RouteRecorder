@@ -62,6 +62,7 @@
 		47A7E66F24B21B99001454C8 /* RouteRecorder */ = {
 			isa = PBXGroup;
 			children = (
+				47A7E68B24B23B3F001454C8 /* Models */,
 				47A7E67024B21B99001454C8 /* AppDelegate.swift */,
 				47A7E67224B21B99001454C8 /* SceneDelegate.swift */,
 				47A7E67724B21B99001454C8 /* ContentView.swift */,
@@ -82,6 +83,13 @@
 				47A7E67C24B21B9B001454C8 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		47A7E68B24B23B3F001454C8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
