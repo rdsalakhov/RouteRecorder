@@ -9,7 +9,6 @@
 import CoreData
 
 class CoreDataStack {
-  
   static let persistentContainer: NSPersistentContainer = {
     let container = NSPersistentContainer(name: "RouteRecorder")
     container.loadPersistentStores { (_, error) in

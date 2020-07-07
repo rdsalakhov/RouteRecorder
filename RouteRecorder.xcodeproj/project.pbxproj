@@ -16,7 +16,7 @@
 		47A7E68024B21B9B001454C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47A7E67E24B21B9B001454C8 /* LaunchScreen.storyboard */; };
 		47A7E68824B21C36001454C8 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A7E68724B21C36001454C8 /* LocationManager.swift */; };
 		47A7E68A24B21C5A001454C8 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A7E68924B21C5A001454C8 /* MapView.swift */; };
-		47A7E68F24B4BE56001454C8 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A7E68E24B4BE56001454C8 /* CoreDataStack.swift */; };
+		47A7E69124B4BF59001454C8 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A7E69024B4BF59001454C8 /* CoreDataStack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +31,7 @@
 		47A7E68124B21B9B001454C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		47A7E68724B21C36001454C8 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		47A7E68924B21C5A001454C8 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
-		47A7E68E24B4BE56001454C8 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		47A7E69024B4BF59001454C8 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +64,6 @@
 		47A7E66F24B21B99001454C8 /* RouteRecorder */ = {
 			isa = PBXGroup;
 			children = (
-				47A7E68E24B4BE56001454C8 /* CoreDataStack.swift */,
 				47A7E68B24B23B3F001454C8 /* Models */,
 				47A7E67024B21B99001454C8 /* AppDelegate.swift */,
 				47A7E67224B21B99001454C8 /* SceneDelegate.swift */,
@@ -76,6 +75,7 @@
 				47A7E67B24B21B9B001454C8 /* Preview Content */,
 				47A7E68724B21C36001454C8 /* LocationManager.swift */,
 				47A7E68924B21C5A001454C8 /* MapView.swift */,
+				47A7E69024B4BF59001454C8 /* CoreDataStack.swift */,
 			);
 			path = RouteRecorder;
 			sourceTree = "<group>";
@@ -166,7 +166,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				47A7E68F24B4BE56001454C8 /* CoreDataStack.swift in Sources */,
+				47A7E69124B4BF59001454C8 /* CoreDataStack.swift in Sources */,
 				47A7E67124B21B99001454C8 /* AppDelegate.swift in Sources */,
 				47A7E68A24B21C5A001454C8 /* MapView.swift in Sources */,
 				47A7E67324B21B99001454C8 /* SceneDelegate.swift in Sources */,
