@@ -13,6 +13,8 @@ struct ContentView: View {
     @State private var showMapSettings : Bool = false
     @State private var action : MapView.Action = .idle
     @State private var mapPickerSelection : Int = 0
+    @State private var recording : Bool = false
+    
      let pickerValues : [PickerValues] = [
         PickerValues(mapType: .standard, description: "Standard"),
         PickerValues(mapType: .hybrid, description: "Hybrid"),
@@ -29,20 +31,43 @@ struct ContentView: View {
         
         return ZStack {
             NavigationView {
-                VStack{
-                    MapView(centerCoordinate: .constant(MKPointAnnotation.example.coordinate), action: self.$action).offset()
+                ZStack {
+                    VStack{
+                        MapView(centerCoordinate: .constant(MKPointAnnotation.example.coordinate), action: self.$action)
+                    }
+                    .edgesIgnoringSafeArea(.all)
+                    .navigationBarTitle("Map", displayMode: .inline)
+                    .navigationBarItems(trailing:
+                        Button(action: {
+                            withAnimation() {
+                                self.showMapSettings.toggle()
+                            }
+                        }, label: {Image(systemName: "gear").imageScale(.large)}))
+                    VStack {
+                        Spacer()
+                        HStack() {
+                            Spacer()
+                            Button(action: {
+                                self.recording.toggle()
+                            }, label: {
+                                Image(systemName: self.recording ? "stop.circle" : "play.circle")
+                                .resizable()
+                                    .frame(width: 60, height: 60, alignment: .center)
+                                    .accentColor(self.recording ? .red : .green)
+                                    .animation(.spring())
+                                
+                            })
+                            .padding(.horizontal, 25)
+                            .padding(.top, 10)
+                            .padding(.bottom, 40)
+                            Spacer()
+                        }
+                        .background(Color("BgColor").opacity(0.8))
+                    }
                 }
                 .edgesIgnoringSafeArea(.all)
-                .navigationBarTitle("Map", displayMode: .inline)
-                .navigationBarItems(trailing:
-                    Button(action: {
-                        withAnimation() {
-                            self.showMapSettings.toggle()
-                        }
-                    }, label: {Image(systemName: "gear").imageScale(.large)}
-                ))
-
             }
+            
             if self.showMapSettings {
                     VStack(alignment: .center) {
                             VStack() {
@@ -70,7 +95,7 @@ struct ContentView: View {
 
                     }
                     .background(
-                    Color.black.opacity(0.65).onTapGesture {
+                    Color.gray.opacity(0.99).onTapGesture {
                         withAnimation() {
                             self.showMapSettings.toggle()
                         }
